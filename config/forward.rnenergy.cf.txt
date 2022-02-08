@@ -1,0 +1,35 @@
+$TTL    604800
+@       IN      SOA     ns1.rnenergy.cf. root.ns1.rnenergy.cf. (
+                              3         ; Serial
+                            600         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+;@      IN      NS      localhost.
+;@      IN      A       127.0.0.1
+;@      IN      AAAA    ::1
+
+;Name Server Information
+
+@        IN      NS      ns1.rnenergy.cf.
+
+;IP address of Name Server
+
+ns1     IN      A       138.68.77.142
+
+;Mail Exchanger
+
+infoit.local.   IN     MX   10   mail.infoit.local.
+
+;A – Record HostName To Ip Address
+
+www     IN       A      68.183.78.113
+mail    IN       A      68.183.78.113
+test1   IN       A      68.183.78.113
+test5   IN       A      68.183.78.113
+tiesto  IN       A      68.183.78.113
+;CNAME record
+
+ftp     IN      CNAME   www.rnenergy.cf.
+

@@ -1,0 +1,27 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     rnenergy.cf. root.rnenergy.cf. (
+                              3         ; Serial
+                            600         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+
+;Name Server Information
+
+@       IN      NS     ns1.rnenergy.cf.
+ns1     IN      A       138.68.77.142
+;Reverse lookup for Name Server
+
+2      IN      PTR    ns1.rnenergy.cf.
+
+;PTR Record IP address to HostName
+
+3     IN      PTR    www.rnenergy.cf.
+4     IN      PTR    mail.rnenergy.cf.
+5     IN      PTR    test1.rnenergy.cf.
+6     IN      PTR    test5.rnenergy.cf.
+7     IN      PTR    tiesto.rnenergy.cf.
